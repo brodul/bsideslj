@@ -32,6 +32,54 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+		<style>
+		  .photos {
+		    /* Prevent vertical gaps */
+		    line-height: 0;
+		    
+		    -webkit-column-count: 5;
+		    -webkit-column-gap:   0px;
+		    -moz-column-count:    5;
+		    -moz-column-gap:      0px;
+		    column-count:         5;
+		    column-gap:           0px;  
+		  }
+
+		  .photos img {
+		    /* Just in case there are inline attributes */
+		    width: 100% !important;
+		    height: auto !important;
+		  }
+		    @media (max-width: 1200px) {
+		      #photos {
+		      -moz-column-count:    4;
+		      -webkit-column-count: 4;
+		      column-count:         4;
+		      }
+		    }
+		    @media (max-width: 1000px) {
+		      #photos {
+		      -moz-column-count:    3;
+		      -webkit-column-count: 3;
+		      column-count:         3;
+		      }
+		    }
+		    @media (max-width: 800px) {
+		      #photos {
+		      -moz-column-count:    2;
+		      -webkit-column-count: 2;
+		      column-count:         2;
+		      }
+		    }
+		    @media (max-width: 400px) {
+		      #photos {
+		      -moz-column-count:    1;
+		      -webkit-column-count: 1;
+		      column-count:         1;
+		      }
+		    }
+		</style>
 	</head>
 
 	<body>
@@ -44,14 +92,37 @@
 
 			<section data-markdown>
 			    <script type="text/template">
-				## Page title
+				## B-Sides Ljubljana
+				12th March 2015
 
-				A paragraph with some text and a [link](http://hakim.se).
+
+				`#BSidesLjubljana`
+			    </script>
+			</section>
+
+			<section data-markdown>
+			    <script type="text/template">
+				### Platium Sponsor
+				![Alt text](http://placehold.it/360x360&text=image1)
+
+
 			    </script>
 			</section>
 
 			<section>
+			  <div class="photos">
+			    <img src="http://placehold.it/120x150&text=image1" alt="" >
+			    <img src="http://placehold.it/140x120&text=image1" alt="" >
+			    <img src="http://placehold.it/200x240&text=image1" alt="" >
+			    <img src="http://placehold.it/160x220&text=image1" alt="" >
+			    <img src="http://placehold.it/120x120&text=image1" alt="" >
+			    <img src="http://placehold.it/100x200&text=image1" alt="" >
+			    <img src="http://placehold.it/120x120&text=image1" alt="" >
+			    <img src="http://placehold.it/120x120&text=image1" alt="" >
+			  </div>
+			</section>
 
+			<section>
 
 <div class="stretch">
   <iframe frameborder=0 width=95% height=90% marginheight=0 marginwidth=0 scrolling=no src="http://en.wikipedia.org/wiki/Letter_case#Headings_and_publication_titles"></iframe>
