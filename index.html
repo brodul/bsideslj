@@ -33,53 +33,18 @@
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 
-		<style>
-		  .photos {
-		    /* Prevent vertical gaps */
-		    line-height: 0;
-		    
-		    -webkit-column-count: 5;
-		    -webkit-column-gap:   0px;
-		    -moz-column-count:    5;
-		    -moz-column-gap:      0px;
-		    column-count:         5;
-		    column-gap:           0px;  
+		<style type="text/css">
+		 img.centered {
+		   display: block; 
+		   margin-left: auto ! important;	  
+		    margin-right: auto ! important;
 		  }
 
-		  .photos img {
-		    /* Just in case there are inline attributes */
-		    width: 100% !important;
-		    height: auto !important;
+		  p.small {
+		  font-size: 70%;
 		  }
-		    @media (max-width: 1200px) {
-		      #photos {
-		      -moz-column-count:    4;
-		      -webkit-column-count: 4;
-		      column-count:         4;
-		      }
-		    }
-		    @media (max-width: 1000px) {
-		      #photos {
-		      -moz-column-count:    3;
-		      -webkit-column-count: 3;
-		      column-count:         3;
-		      }
-		    }
-		    @media (max-width: 800px) {
-		      #photos {
-		      -moz-column-count:    2;
-		      -webkit-column-count: 2;
-		      column-count:         2;
-		      }
-		    }
-		    @media (max-width: 400px) {
-		      #photos {
-		      -moz-column-count:    1;
-		      -webkit-column-count: 1;
-		      column-count:         1;
-		      }
-		    }
 		</style>
+
 	</head>
 
 	<body>
@@ -100,32 +65,115 @@
 			    </script>
 			</section>
 
-			<section data-markdown>
-			    <script type="text/template">
-				### Platium Sponsor
-				![Alt text](http://placehold.it/360x360&text=image1)
-
-
-			    </script>
+			<section>
+			  <h2>Leading sponsor</h2>
+			  <img src="img/viris.png" alt="" />
 			</section>
 
 			<section>
-			  <div class="photos">
-			    <img src="http://placehold.it/120x150&text=image1" alt="" >
-			    <img src="http://placehold.it/140x120&text=image1" alt="" >
-			    <img src="http://placehold.it/200x240&text=image1" alt="" >
-			    <img src="http://placehold.it/160x220&text=image1" alt="" >
-			    <img src="http://placehold.it/120x120&text=image1" alt="" >
-			    <img src="http://placehold.it/100x200&text=image1" alt="" >
-			    <img src="http://placehold.it/120x120&text=image1" alt="" >
-			    <img src="http://placehold.it/120x120&text=image1" alt="" >
+			  <h3>Supporting sponsor</h3>
+			  <img src="img/stackstorm.png" alt="" />
+			</section>
+
+
+			<section>
+			  <h3>Wireless/networking sponsors</h3>
+			  <img src="img/aero.png" alt="" />
+			  <img src="img/aerohive.png" alt="" />
+			</section>
+
+			<section>
+			  <h3>Community sponsors</h3>
+			  <div>
+			    <p class="small">Local hackerspace Cyberpipe/Kiberpipa</p>
+			    <img class="centered" src="img/kiberpipa.png" alt="" />
+			    <p class="small">Linux User Group of Slovenia – LUGOS</p>
+			    <img class="centered" src="img/lugos.png" alt="" />
+			    <p class="small">Cloud Security Alliance Slovenian Chapter</p>
+			    <img class="centered" src="img/csa.png" alt="" />
+			    <p class="small">Hekovnik for hosting workshops</p>
+			    <img class="centered" src="img/hekovnik.png" alt="" />
 			  </div>
 			</section>
 
 			<section>
+			  <h3>Schedule</h3>
 
+			  <table style="font-size: 50%" cellspacing="0">
+			    <tr>
+			      <th>ID</th>
+			      <th>Talk</th>
+			      <th>Start Time</th>
+			    </tr>
+			    <tr>
+			      <td>1</td>
+			      <td>Forging the USB armory – Creating an open source secure flash-drive-sized computer (Andrea Barisani)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>2</td>
+			      <td>Cold War Spy Techniques and Moscow Rules for Cybersecurity (Alper Basaran)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>3</td>
+			      <td>IoT IT Security and Secure Development Life Cycle (Christopher Scheuring)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>4</td>
+			      <td>EU’s biggest Cyber Security Exercise – Cyber Europe 2014 (Razvan Gavrila)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>5</td>
+			      <td>The wrong side of history – everything that is old is new again (Arron “finux” Finnon)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>6</td>
+			      <td>Uncovering secret connections among online attackers using network theory and custom honeypots (Pedram Hayati)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>7</td>
+			      <td>Automated security scanning and remediation in the cloud using StackStorm (Tomaž Muraus)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>8</td>
+			      <td>Fully deterministic & verifiable linux distro (Jaka Hudoklin)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>9</td>
+			      <td>2014 – Year of Broken Name Generator(s) (Miroslav Štampar)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>10</td>
+			      <td>Deep and dark web – demystifying differences and explaining key 2014 events (Jurica Čular)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>11</td>
+			      <td>Low-Tech High-Intensity Phishing Attacks on Slovenian Banks (Gorazd Božič)</td>
+			      <td></td>
+			    </tr>
+			    <tr>
+			      <td>12</td>
+			      <td>Invisible packets (Milan Gabor & Danijel Grah)</td>
+			      <td></td>
+			    </tr>
+			  </table>
+			</section>
+
+
+			<section>
+
+			  <h3>Twitter</h3>
 <div class="stretch">
-  <iframe frameborder=0 width=95% height=90% marginheight=0 marginwidth=0 scrolling=no src="http://en.wikipedia.org/wiki/Letter_case#Headings_and_publication_titles"></iframe>
+  <iframe frameborder=0 width=95% height=95% marginheight=0 marginwidth=0 scrolling=no src="http://0.0.0.0:6543?search_term=bsidesljubljana&tweet_number=4&view_type=full"></iframe>
 </div>
 
 			</section>
