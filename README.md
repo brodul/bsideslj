@@ -22,7 +22,7 @@ Make a config file twitter.ini:
 ```
 
 
-`$HOME/bsides/ripe.meetingtwitter/bin/supervisord`
+`$HOME/bsideslj/ripe.meetingtwitter/bin/supervisord`
 
 `cd ..`
 
