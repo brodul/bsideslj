@@ -4,8 +4,11 @@ Install
 Go to HOME and clone:
 
 `git submodule init`
+
 `git submodule update`
+
 `cd ripe.meetingtwitter` 
+
 `make production` 
 
 Make a config file twitter.ini:
@@ -22,4 +25,5 @@ Make a config file twitter.ini:
 `$HOME/bsides/ripe.meetingtwitter/bin/supervisord`
 
 `cd ..`
+
 `firefox index.html`
