@@ -4,4 +4,4 @@ sudo apt-get update
 
 sudo apt-get install chromium
 
-sudo cp autostart /tmp/etc/xdg/lxsession/LXDE-pi/autostart
+sudo cp autostart /etc/xdg/lxsession/LXDE-pi/autostart
