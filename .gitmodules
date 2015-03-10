@@ -1,6 +1,0 @@
-[submodule "ripe.meetingtwitter"]
-	path = ripe.meetingtwitter
-	url = https://github.com/brodul/ripe.meetingtwitter.git
-[submodule "reveal.js"]
-	path = reveal.js
-	url = https://github.com/hakimel/reveal.js.git
