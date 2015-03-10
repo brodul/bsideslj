@@ -1,0 +1,29 @@
+div.centered, table.centered{
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 999;
+}
+
+img.centered{
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 999;
+}
+
+h1 {
+
+  font-size: 500%;
+}
+
+h2 {
+
+  font-size: 400%;
+}
+
+img{
+  zoom:1.5;
+}
