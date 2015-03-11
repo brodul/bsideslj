@@ -4,4 +4,4 @@
 @xset s noblank
 @xset s off
 @xset -dpms
-@/bin/bash /home/pi/start.sh
+@/bin/bash /home/pi/bsideslj/start.sh
