@@ -3,17 +3,24 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script>
       $(document).ready(function(){
-        var locations = ["title.html", "viris.html", "twitter.html",
-          "stackstorm.html",
-          "aero.html",
-          "schedule.html",
+        var locations = [
+          ["title.html", 10000],
+          ["viris.html", 11000],
+          ["twitter.html", 15000],
+          ["stackstorm.html", 10000],
+          ["aero.html", 10000],
+          ["schedule.html", 10000],
         ];
         var len = locations.length;
         var iframe = $('#frame');
         var i = 0;
-        setInterval(function () {
-            iframe.attr('src', locations[++i % len]);
-        }, 10000);
+        recursionLove = function(){
+          clearInterval(interval);
+          iframe.attr('src', locations[++i % len][0]);
+          interval = setInterval(recursionLove,
+                        locations[i % len][1]);
+        }
+        var interval = setInterval(recursionLove, 0);
       });
     </script>
   </head>
