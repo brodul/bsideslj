@@ -21,9 +21,15 @@
         var i = 0;
         recursionLove = function(){
           clearInterval(interval);
-          iframe.attr('src', locations[++i % len][0]);
-          interval = setInterval(recursionLove,
-                        locations[i % len][1]);
+          iframe.fadeOut("slow", function (){
+            iframe.attr('src', locations[++i % len][0]);
+            setTimeout( function() {
+              iframe.fadeIn("slow", function () {
+                interval = setInterval(recursionLove,
+                              locations[i % len][1]);
+              });
+            }, 300);
+          });
         }
         var interval = setInterval(recursionLove, 0);
       });
