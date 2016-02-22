@@ -1,31 +1,46 @@
-div.centered, table.centered{
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  position: fixed;
-  top: 0; left: 0; bottom: 0; right: 0;
-  z-index: 999;
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img.centered{
-  margin: auto;
-  position: fixed;
-  top: 0; left: 0; bottom: 0; right: 0;
-  z-index: 999;
+.center-text {
+    text-align: center
 }
 
-h1 {
-
-  font-size: 500%;
+.vh10 {
+  height: 10vh;
+  font-size: 10vh;
 }
 
-h2 {
-
-  font-size: 400%;
+.vh20 {
+  height: 20vh;
+  font-size: 20vh;
 }
 
-img{
-  zoom:1.5;
+.vh25 {
+  height: 25vh;
+  font-size: 25vh;
+}
+
+.vh30 {
+  height: 30vh;
+  font-size: 30vh;
+}
+
+.vh35 {
+  height: 35vh;
+  font-size: 35vh;
+}
+
+.vh40 {
+  height: 40vh;
+  font-size: 40vh;
+}
+
+.vh70 {
+  height: 70vh;
+  font-size: 70vh;
 }
 
 @keyframes fadeIn {
