@@ -6,19 +6,19 @@
         var locations = [
           ["title.html", 2000],
           ["viris.html", 2100],
-          ["twitter.html", 6000],
-          ["stackstorm.html", 2000],
-          ["aero.html", 2000],
-          ["comulus.html", 2000],
-          ["stacklab.html", 2000],
-          ["comu.html", 2000],
-          ["schedule.html", 2000],
-          ["http://10.14.10.10", 9000],
-          ["http://viris.brodul.org", 2000],
+          ["http://twitterwall.creal.de/?term=%23bsidesljubljana", 20000],
+          ["time.html", 2000],
+          // ["aero.html", 2000],
+          // ["comulus.html", 2000],
+          // ["stacklab.html", 2000],
+          // ["comu.html", 2000],
+          // ["schedule.html", 2000],
+          // ["http://10.14.10.10", 9000],
+          // ["http://viris.brodul.org", 2000],
         ];
         var len = locations.length;
         var iframe = $('#frame');
-        var i = 0;
+        var i = -1;
         recursionLove = function(){
           clearInterval(interval);
           iframe.fadeOut("slow", function (){
@@ -28,7 +28,7 @@
                 interval = setInterval(recursionLove,
                               locations[i % len][1]);
               });
-            }, 300);
+            }, 100);
           });
         }
         var interval = setInterval(recursionLove, 0);
