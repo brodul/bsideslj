@@ -8,9 +8,15 @@
     text-align: center
 }
 
+
 .vh10 {
   height: 10vh;
   font-size: 10vh;
+}
+
+.vh15 {
+  height: 15vh;
+  font-size: 15vh;
 }
 
 .vh20 {

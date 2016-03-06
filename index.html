@@ -3,15 +3,27 @@
     <script type="text/javascript" src="jquery.js"></script>
     <script>
       $(document).ready(function(){
+
+
+        var framePreload = function (url) {
+          var frame = document.createElement("iframe");
+          frame.src = url;
+          return frame;
+        };
+        var preloadedWall = framePreload("http://localhost:3000/?term=%23bsidesljubljana");
+
         var locations = [
           ["title.html", 2000],
-          ["viris.html", 2100],
-          ["http://twitterwall.creal.de/?term=%23bsidesljubljana", 20000],
+          ["arnes.html", 3000],
+          ["viris.html", 3000],
+          ["cltre.html", 3000],
+          ["aero.html", 2000],
+          ["monitor.html", 2000],
+          ["comu.html", 2000],
+          ["http://history.brodul.org:3001/?term=%23bsidesljubljana", 20000],
           ["time.html", 2000],
-          // ["aero.html", 2000],
           // ["comulus.html", 2000],
           // ["stacklab.html", 2000],
-          // ["comu.html", 2000],
           // ["schedule.html", 2000],
           // ["http://10.14.10.10", 9000],
           // ["http://viris.brodul.org", 2000],
@@ -22,13 +34,14 @@
         recursionLove = function(){
           clearInterval(interval);
           iframe.fadeOut("slow", function (){
+            // iframe.attr('src', locations[++i % len][0]);
             iframe.attr('src', locations[++i % len][0]);
             setTimeout( function() {
               iframe.fadeIn("slow", function () {
                 interval = setInterval(recursionLove,
                               locations[i % len][1]);
               });
-            }, 100);
+            }, 300);
           });
         }
         var interval = setInterval(recursionLove, 0);
