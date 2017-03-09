@@ -46,6 +46,11 @@
   font-size: 40vh;
 }
 
+.vh60 {
+  height: 60vh;
+  font-size: 60vh;
+}
+
 .vh70 {
   height: 70vh;
   font-size: 70vh;
