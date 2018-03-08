@@ -22,7 +22,7 @@ while :; do
   sleep 120
   git pull
   REVISION=$(git rev-parse HEAD)
-  if [ $REVISION -ne $OLD_REVISION ]; then
+  if [ $REVISION != $OLD_REVISION ]; then
     echo "Change detected"
     WID=$(xdotool search --onlyvisible --class chromium|head -1)
     xdotool windowactivate ${WID}
