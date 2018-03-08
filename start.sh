@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 chromium () {
 chromium-browser --kiosk \
   --disable \
@@ -23,6 +23,7 @@ while :; do
   git pull
   REVISION=$(git rev-parse)
   if [ $REVISION -ne $OLD_REVISION ]; then
+    echo "Change detected"
     chromium
   fi
 
