@@ -15,16 +15,18 @@ git pull
 
 chromium
 
-REVISION=$(git rev-parse)
+REVISION=$(git rev-parse HEAD)
 
 while :; do
   OLD_REVISION=$REVISION
   sleep 120
   git pull
-  REVISION=$(git rev-parse)
+  REVISION=$(git rev-parse HEAD)
   if [ $REVISION -ne $OLD_REVISION ]; then
     echo "Change detected"
-    chromium
+    WID=$(xdotool search --onlyvisible --class chromium|head -1)
+    xdotool windowactivate ${WID}
+    xdotool key ctrl+F5
   fi
 
 done
